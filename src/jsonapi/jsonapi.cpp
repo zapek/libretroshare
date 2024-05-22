@@ -333,7 +333,7 @@ JsonApiServer::JsonApiServer(): configMutex("JsonApiServer config"),
 				RS_SERIAL_PROCESS(requested_size);
 			}
 
-			if(requested_size > 10485760)
+			if(requested_size > 1048576)
 				errorMessage = "requested_size is too big! Better less then 1M";
 			else
 			{
